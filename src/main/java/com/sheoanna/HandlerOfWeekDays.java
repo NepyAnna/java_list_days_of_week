@@ -15,6 +15,13 @@ public class HandlerOfWeekDays {
     }
 
     public void createListOfWeekDays() {
-
+        List<String> weekDays = new ArrayList<String>();
+        weekDays.add("Monday");
+        weekDays.add("Tuesday");
+        weekDays.add("Wenesday");
+        weekDays.add("Thusday");
+        weekDays.add("Friday");
+        weekDays.add("Saturday");
+        weekDays.add("Sanday");
     }
 }
