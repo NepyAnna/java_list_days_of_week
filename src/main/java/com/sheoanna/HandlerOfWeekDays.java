@@ -54,5 +54,10 @@ public class HandlerOfWeekDays {
             return "Day does not exist in list now!";
         }
     }
+
+    public void sortDaysAlphabetically() {
+        Collections.sort(weekDays);
+    }
+
     
 }

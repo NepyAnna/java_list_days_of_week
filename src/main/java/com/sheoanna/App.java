@@ -21,6 +21,9 @@ public final class App {
         System.out.println();
         System.out.println(weekDays.getDayIfExists("Monday"));
 
-        
+        System.out.println();
+        weekDays.sortDaysAlphabetically();
+        weekDays.showAllWeekdays();
+
     }
 }
