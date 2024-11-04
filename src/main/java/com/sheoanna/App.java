@@ -25,5 +25,7 @@ public final class App {
         weekDays.sortDaysAlphabetically();
         weekDays.showAllWeekdays();
 
+        System.out.println();
+        weekDays.clearList();
     }
 }

@@ -59,5 +59,9 @@ public class HandlerOfWeekDays {
         Collections.sort(weekDays);
     }
 
+    public void clearList() {
+        System.out.println("Clear All List");
+        weekDays.clear();
+    }
     
 }
