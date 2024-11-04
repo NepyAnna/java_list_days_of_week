@@ -60,8 +60,8 @@ public class HandlerOfWeekDays {
     }
 
     public void clearList() {
-        System.out.println("Clear All List");
         weekDays.clear();
     }
+    
     
 }
