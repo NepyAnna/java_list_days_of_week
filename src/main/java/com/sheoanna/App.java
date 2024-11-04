@@ -27,5 +27,6 @@ public final class App {
 
         System.out.println();
         weekDays.clearList();
+        weekDays.showAllWeekdays();
     }
 }
