@@ -2,7 +2,6 @@ package com.sheoanna;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
@@ -48,7 +47,8 @@ public class HandlerOfWeekDaysTest {
 
     @Test
     void testGetDayIfExists() {
-
+        assertEquals("Monday",handler.getDayIfExists("Monday"));
+        assertEquals("Day does not exist in list now!", handler.getDayIfExists("Not exist day!"));
     }
 
     @Test
