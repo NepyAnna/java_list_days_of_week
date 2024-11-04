@@ -1,6 +1,7 @@
 package com.sheoanna;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class HandlerOfWeekDays {
@@ -10,12 +11,8 @@ public class HandlerOfWeekDays {
         createListOfWeekDays();
     }
 
-    public List<String> getWeekDays() {
-        return weekDays;
-    }
-
     public void createListOfWeekDays() {
-        List<String> weekDays = new ArrayList<String>();
+        weekDays = new ArrayList<String>();
         weekDays.add("Monday");
         weekDays.add("Tuesday");
         weekDays.add("Wenesday");
@@ -24,4 +21,20 @@ public class HandlerOfWeekDays {
         weekDays.add("Saturday");
         weekDays.add("Sanday");
     }
+
+    public List<String> getWeekDays() {
+        return weekDays;
+    }
+
+    public void showAllWeekdays(){
+        for(String day: weekDays) {
+            System.out.println(day);
+        }
+    }
+
+    public Integer sizeOfWeek () {
+        return this.weekDays.size();
+    }
+
+    
 }
