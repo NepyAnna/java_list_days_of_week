@@ -15,6 +15,7 @@ public final class App {
         weekDays.removeDay("Monday");
         weekDays.showAllWeekdays();
 
-        
+        System.out.println();
+        System.out.println(weekDays.getDay(2));
     }
 }

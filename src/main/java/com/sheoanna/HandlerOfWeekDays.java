@@ -40,5 +40,11 @@ public class HandlerOfWeekDays {
         weekDays.remove(day);
     }
 
-    
+    public String getDay(int index) {
+        if (index < 0 || index >= weekDays.size()) {
+            return "Wrong index!";
+        }
+        return weekDays.get(index);
+    }
+
 }
