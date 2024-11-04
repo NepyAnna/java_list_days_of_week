@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -53,11 +55,30 @@ public class HandlerOfWeekDaysTest {
 
     @Test
     void testSortDaysAlphabetically() {
+        handler.sortDaysAlphabetically();
 
+        assertEquals("Friday", handler.getDay(0));
     }
 
     @Test
     void testClearList() {
+        handler.clearList();
+        assertEquals(0,handler.sizeOfWeek());
+    }
 
+    @Test
+    void testShowAllWeekDays(){
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+        System.setOut(new PrintStream(outputStream));
+
+        handler.showAllWeekdays();
+
+        String expectedOutPut = String.join(System.lineSeparator(),"Monday", "Tuesday", "Wenesday", "Thusday", "Friday", "Saturday", "Sanday") + System.lineSeparator();
+
+        assertEquals(expectedOutPut, outputStream.toString());
+
+        System.setOut(originalOut);
     }
 }
