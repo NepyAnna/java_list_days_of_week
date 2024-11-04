@@ -47,4 +47,12 @@ public class HandlerOfWeekDays {
         return weekDays.get(index);
     }
 
+    public String getDayIfExists(String day) {
+        if (weekDays.contains(day)) {
+            return day;
+        } else {
+            return "Day does not exist in list now!";
+        }
+    }
+    
 }

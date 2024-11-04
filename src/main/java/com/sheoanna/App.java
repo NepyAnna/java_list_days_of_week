@@ -17,5 +17,10 @@ public final class App {
 
         System.out.println();
         System.out.println(weekDays.getDay(2));
+
+        System.out.println();
+        System.out.println(weekDays.getDayIfExists("Monday"));
+
+        
     }
 }
