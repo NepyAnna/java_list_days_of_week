@@ -36,5 +36,9 @@ public class HandlerOfWeekDays {
         return this.weekDays.size();
     }
 
+    public void removeDay(String day) {
+        weekDays.remove(day);
+    }
+
     
 }

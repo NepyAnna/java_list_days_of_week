@@ -11,6 +11,10 @@ public final class App {
         System.out.println();
         System.out.println(weekDays.sizeOfWeek());
 
+        System.out.println();
+        weekDays.removeDay("Monday");
+        weekDays.showAllWeekdays();
+
         
     }
 }
